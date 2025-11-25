@@ -1,0 +1,71 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center/cover;
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Professional Cards */
+.pro-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.pro-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.pro-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+}
+
+.footer .social-icons a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: white;
+}
